@@ -1,0 +1,87 @@
+#tituloBienvenida {
+
+    font-size: 60px;
+    color:black;
+    font-family:Nekst;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: local("Nekst Black");
+
+
+    font-family: 'Nekst-Bold';
+    src: local("Nekst Bold");
+    
+}
+
+#buttonBienvenida{
+
+    font-family:Nekst-Bold;
+    font-size: 40px;
+    color: white;
+    
+
+
+}
+
+.logo{
+
+    font-size: 50px;
+    color:white;
+    font-family:Nekst;
+    text-align: center;
+
+}
+
+.footer{
+
+    color: white;
+    font-family:Nekst;
+    text-align: center;
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   
+   width:100%;
+}
+
+
+#margenesInicio{
+
+    margin: 100px;
+
+}
+
+#subTitulo{
+    font-size: 30px;
+    color:black;
+    font-family:Nekst;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.form{
+
+    padding-top: 30px;
+    padding-left: 30px;
+    align-items: center;
+
+}
+
+.fuenteFormulario{
+     font-size: larger;
+
+}
+
+
+#botonAgregar{
+
+    margin: 0 auto;
+    display: inline
+}
+
