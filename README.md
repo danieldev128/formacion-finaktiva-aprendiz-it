@@ -24,24 +24,24 @@ Lista de tecnologías usadas:
 * [JavaScript](https://example.com): Version ECMAScript 2021 
 ## Descripción de los métodos
 ***
-* Agregar: Este método su funcion es agregar los números que el usuario debe de insertar, utilizando el DOM de HTML5 asignamos un ID a un elemento input, y con Javascript agregamos los números por medio de un arreglo, entonces volviendo a lo que compete este método declaré una variable número donde se guardará el número agregado, se hace la validacion mediante una sentencia condicional `` if ``.  y se asegura si la cadena está vacía y lanza un alert de indicandole al usuario de que debe de ingresar un número, en caso contrario mediante método ``push`` propio de JavaScript permite agregar el dato al array declarado al inicio del programa, y por ultimo lanza un alert de que el número fué agregado correctamente.
+* **Agregar**: Este método su funcion es agregar los números que el usuario debe de insertar, utilizando el DOM de HTML5 asignamos un ID a un elemento input, y con Javascript agregamos los números por medio de un arreglo, entonces volviendo a lo que compete este método declaré una variable número donde se guardará el número agregado, se hace la validacion mediante una sentencia condicional `` if ``.  y se asegura si la cadena está vacía y lanza un alert de indicandole al usuario de que debe de ingresar un número, en caso contrario mediante método ``push`` propio de JavaScript permite agregar el dato al array declarado al inicio del programa, y por ultimo lanza un alert de que el número fué agregado correctamente.
 
-* ImprimirInput: Este método imprime los numéros agregados por el usuario hasta el momento, sin aplicarle algún tipo de ordenamiento, el contenido del método es que se declara una variable  "resultado" vacía y mediante una sentencia repetitiva ``for.. of``. se recorre el arreglo y en cada iteracion agregará el número a la variable que estaba vacía al prinpio del método guardando así cada número, despues esta variable se envia al DOM del documento HTML.
+* **ImprimirInput**: Este método imprime los numéros agregados por el usuario hasta el momento, sin aplicarle algún tipo de ordenamiento, el contenido del método es que se declara una variable  "resultado" vacía y mediante una sentencia repetitiva ``for.. of``. se recorre el arreglo y en cada iteracion agregará el número a la variable que estaba vacía al prinpio del método guardando así cada número, despues esta variable se envia al DOM del documento HTML.
 
-* imprimirLabel: Este método solo es invocado por los métodos siguientes, solo imprimirá si se le hace algún procesamiento al array, este método no tiene parametros de entrada, su cuerpo consiste en primera instancia limpiar el label del DOM html5, depúes se declara una variable resultado vacía, y mediante un ``for()``. se agrega cada número a la variable declarada al principio del método, una vez recorrido el arreglo envía la variable resultado al DOM especificamente al elemento label on ID salida datos
+* **imprimirLabel**: Este método solo es invocado por los métodos siguientes, solo imprimirá si se le hace algún procesamiento al array, este método no tiene parametros de entrada, su cuerpo consiste en primera instancia limpiar el label del DOM html5, depúes se declara una variable resultado vacía, y mediante un ``for()``. se agrega cada número a la variable declarada al principio del método, una vez recorrido el arreglo envía la variable resultado al DOM especificamente al elemento label on ID salida datos
 
-* Ordenar de mayor a menor: Se usa el método propio de JavaScript  ``array.sort`` que mediante una fúncion de comparacion ordena el el arreglo 
+* **Ordenar de mayor a menor**: Se usa el método propio de JavaScript  ``array.sort`` que mediante una fúncion de comparacion ordena el el arreglo 
 El método ``sort()`` puede ordenar valores negativos, cero y positivos en el orden correcto. Cuando compara dos valores, los envía a nuestra función de comparación y luego ordena los valores de acuerdo al resultado devuelto.
 
     Si el resultado es negativo, a se ordena antes que b.
     Si el resultado es positivo, b se ordena antes de a.
     Si el resultado es 0, nada cambia.
 
-* Ordenar de menor a mayor: Se usa el método sort de forma inversa es decir `` numeros.sort(function(a, b){return b - a}); // --> 23, 12, 3 .``
+* **Ordenar de menor a mayor**: Se usa el método sort de forma inversa es decir `` numeros.sort(function(a, b){return b - a}); // --> 23, 12, 3 .``
 
-* Sumar todos los números de la colección: Este método limpia el label con el ID de "salidaDatos" del DOM, luego se declara una variable acumuladora sumaNumeros con valor incial "0" luego mediante un for se recorre todo el arreglo y se hace el incremento a la variable sumaNumeros despúes de recorrido el arreglo  se envía la variable sumaNumeros al label salidaDatos.
+* **Sumar todos los números de la colección**: Este método limpia el label con el ID de "salidaDatos" del DOM, luego se declara una variable acumuladora sumaNumeros con valor incial "0" luego mediante un for se recorre todo el arreglo y se hace el incremento a la variable sumaNumeros despúes de recorrido el arreglo  se envía la variable sumaNumeros al label salidaDatos.
 
-* Multiplicar cada número por sí mismo:Este método resetea el elemento del DOM "salidaDatos", luego de eso declara un arreglo auxiliar que luego sera iterado por un ``for`` y con el mismo índice del se efectúa la multiplicación por sí mismo del arreglo global llamado "Datos" y esta operacion se guarda en el arreglo auxiliar.
+* **Multiplicar cada número por sí mismo**:Este método resetea el elemento del DOM "salidaDatos", luego de eso declara un arreglo auxiliar que luego sera iterado por un ``for`` y con el mismo índice del se efectúa la multiplicación por sí mismo del arreglo global llamado "Datos" y esta operacion se guarda en el arreglo auxiliar.
 luego se declara otra iteracion para imprimir cada uno de los elementos del arreglo auxiliar, que daría como resultado cada número multiplicado por sí mismo.
 
 ```
