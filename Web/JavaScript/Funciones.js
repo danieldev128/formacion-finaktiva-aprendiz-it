@@ -20,6 +20,7 @@ function agregar(){
         datos.push(numero);
 
     alert('Número agregado correctamente')
+    document.getElementById('numero').value ="";
     }
     
     
@@ -30,9 +31,9 @@ function agregar(){
 }
 
 
-function imprimir(){
+function imprimirInput(){
 
-    let resultado = "";
+    let resultado = "|";
     
 
     for(const dato of datos){
@@ -51,12 +52,12 @@ function imprimirLabel(){
 
     document.getElementById('salidaDatos').innerHTML = "";
 
-    let resultado = "";
+    let resultado = "|"
     
 
     for(i = 0 ; i < datos.length; i++){
 
-        resultado = resultado + datos[i]
+        resultado += datos[i] + '|';
     }
 
     document.getElementById('salidaDatos').innerHTML = resultado;
