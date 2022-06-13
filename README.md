@@ -1,8 +1,8 @@
-## Table of Contents
+## Tabla de contenido
 1. [Información general](#Información-general)
 2. [Tecnológias](#Tecnológias)
 3. [Descripción de los métodos](#Descripción-de-los-métodos)
-4. [Collaboration](#Colaboraciones)
+4. [Colaboraciones](#Colaboraciones)
 5. [Preguntas frecuentes](#Preguntas)
 ### Información general
 ***
