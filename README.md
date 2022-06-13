@@ -2,8 +2,8 @@
 1. [Información general](#Información-general)
 2. [Tecnológias](#Tecnológias)
 3. [Descripción de los métodos](#Descripción-de-los-métodos)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+4. [Collaboration](#Colaboraciones)
+5. [Preguntas frecuentes](#Preguntas)
 ### Información general
 ***
 Este es mi primer proyecto dentro de la empresa Finaktiva como aprendiz de T.I, el proyecto fue propuesto por nuestra team leader Melissa Tejada, su propósito principal es que mediante este ejercicio nos posibilite hacer un acercamiento de lo que hace un desarrollador dentro de la mencionada empresa.
