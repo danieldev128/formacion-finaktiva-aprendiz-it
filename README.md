@@ -45,22 +45,19 @@ El método ``sort()`` puede ordenar valores negativos, cero y positivos en el or
 luego se declara otra iteracion para imprimir cada uno de los elementos del arreglo auxiliar, que daría como resultado cada número multiplicado por sí mismo.
 
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
+
 ```
 
 La Aplicación web puede ser procesada por Navegadores que soporte las tecnológias mencionadas anteriormente.
 ## Collaboration
 ***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
+Nuestro proyecto es un paso pequeño paso hacia la profesionalizacion, acepto donaciones para los practicantes de finaktiva.
+> La motivación nos impulsa a comenzar y el hábito nos permite continuar - JIM RYUN
 > It should go over several rows?
 > This is how you do it.
 ## FAQs
 ***
-A list of frequently asked questions
+Lista frecuente de preguntas
 1. **This is a question in bold**
 Answer of the first question with _italic words_. 
 2. __Second question in bold__ 
