@@ -21,7 +21,7 @@ function agregar(){
 
     alert('Número agregado correctamente')
     document.getElementById('numero').value ="";
-    document.getElementById("numerosAgregados").placeholder = "Click Aquí para ver números agregados";
+    document.getElementById("numerosAgregados").placeholder = "Click aquí para ver números agregados";
     }
     
     

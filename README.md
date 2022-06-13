@@ -41,7 +41,7 @@ El método ``sort()`` puede ordenar valores negativos, cero y positivos en el or
 
 * **Sumar todos los números de la colección**: Este método limpia el label con el ID de "salidaDatos" del DOM, luego se declara una variable acumuladora sumaNumeros con valor incial "0" luego mediante un for se recorre todo el arreglo y se hace el incremento a la variable sumaNumeros despúes de recorrido el arreglo  se envía la variable sumaNumeros al label salidaDatos.
 
-* **Multiplicar cada número por sí mismo**:Este método resetea el elemento del DOM "salidaDatos", luego de eso declara un arreglo auxiliar que luego sera iterado por un ``for`` y con el mismo índice del se efectúa la multiplicación por sí mismo del arreglo global llamado "Datos" y esta operacion se guarda en el arreglo auxiliar.
+* **Multiplicar cada número por sí mismo**: Este método resetea el elemento del DOM "salidaDatos", luego de eso declara un arreglo auxiliar que luego sera iterado por un ``for`` y con el mismo índice del se efectúa la multiplicación por sí mismo del arreglo global llamado "Datos" y esta operacion se guarda en el arreglo auxiliar.
 luego se declara otra iteracion para imprimir cada uno de los elementos del arreglo auxiliar, que daría como resultado cada número multiplicado por sí mismo.
 
 ```
@@ -49,13 +49,11 @@ luego se declara otra iteracion para imprimir cada uno de los elementos del arre
 ```
 
 La Aplicación web puede ser procesada por Navegadores que soporte las tecnológias mencionadas anteriormente.
-## Collaboration
+## Colaboraciones
 ***
 Nuestro proyecto es un paso pequeño paso hacia la profesionalizacion, acepto donaciones para los practicantes de finaktiva.
 > La motivación nos impulsa a comenzar y el hábito nos permite continuar - JIM RYUN
-> It should go over several rows?
-> This is how you do it.
-## FAQs
+## Preguntas
 ***
 Lista frecuente de preguntas
 1. **This is a question in bold**
