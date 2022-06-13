@@ -15,6 +15,8 @@ La funcionalidad general de este proyecto es ser un gestor de números, que prov
 * Multiplicar cada número por sí mismo. 
 
 ### Screenshot
+![Image text](https://github.com/danieldev128/formacion-finaktiva-aprendiz-it/blob/master/WireFrames/PagBienvenida.png)
+***
 ![Image text](https://github.com/danieldev128/formacion-finaktiva-aprendiz-it/blob/master/WireFrames/PagCalculador.png)
 ## Tecnológias
 ***
