@@ -21,6 +21,7 @@ function agregar(){
 
     alert('Número agregado correctamente')
     document.getElementById('numero').value ="";
+    document.getElementById("numerosAgregados").placeholder = "Click Aquí para ver números agregados";
     }
     
     
@@ -35,16 +36,23 @@ function imprimirInput(){
 
     let resultado = "|";
     
+    if(datos.length === 0){
 
-    for(const dato of datos){
+        document.getElementById("numerosAgregados").placeholder = "No hay nada para mostrar";
+
+    }else{
+
+        for(const dato of datos){
         
-        resultado += dato + '|';
-
-
+            resultado += dato + '|';
+        }
+    
+        document.getElementById("numerosAgregados").value = resultado;
 
     }
+    
 
-    document.getElementById("numerosAgregados").value = resultado;
+   
 
 }
 
@@ -69,7 +77,7 @@ function imprimirLabel(){
 
 function ordenarMayorMenor(){
 
-    datos.sort(function(a, b){return a - b})
+    datos.sort(function(a, b){return b - a})
     
     /*
   let aux;
@@ -95,7 +103,7 @@ function ordenarMayorMenor(){
 function ordenarMenorMayor(){
 
     let aux;
-    datos.sort(function(a, b){return b - a})
+    datos.sort(function(a, b){return a - b})
 
     /*
 
