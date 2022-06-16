@@ -9,8 +9,8 @@
     <title>finaktiva gestor de numeros</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark logo">
-        <a class="navbar-brand" href="#">finaktiva</a>
+    <nav class="navbar navbar-dark bg-dark ">
+        <a class="logo navbar-brand " href="#">finaktiva</a>
       </nav>
 
       <div id="subTitulo">
@@ -18,7 +18,7 @@
       
         </div>
 
-        <div class="container">
+        <div class="container containerCal">
         <form class="form form-horizontal">
             
             <div class="input-group">
@@ -27,15 +27,16 @@
                   <input type="number" class="col-sm-3 form-control"  id="numero">
                   
                   <span class="input-group-btn">
-                    <button class="btn btn-dark" style="margin-left: 30px;" type="button" onclick="agregar()">Agregar</button>
+                    <button class="btn btn-light botonCustom" style="margin-left: 30px;" type="button" onclick="agregar()">Agregar</button>
                
                  
                 </div>
                 <div class="input-group" style="margin-top: 30px;">
                   <label for="colFormLabelLg" class="col-sm-2  fuenteFormulario">Números agregados:</label>
                 
-                  <input  class="col-sm-3 form-control"  id="numerosAgregados" placeholder="Click aquí para ver números agregados" onclick="imprimirInput()">
-
+                 
+                  <ul>
+                  </ul>
                  
 
                 </div>
@@ -44,8 +45,8 @@
                   <label for="colFormLabelLg" class="col-sm-2  fuenteFormulario">Seleccione la función:</label>
                 
                   <select class="form-control" id="selectorOp" style="width: 100px;" >
-                    <option selected>Abrir este menú</option>
-                    <option value="1">Ordenar de mayor a menor</option>
+                    <option selected value="5">Abrir este menú</option>
+                    <option value="1" >Ordenar de mayor a menor</option>
                     <option value="2">Ordenar de menor a mayor</option>
                     <option value="3">Sumar todos los números de la colección</option>
                     <option value="4">Multiplicar cada número por sí mismo</option>
@@ -54,23 +55,23 @@
 
                 <div class="h-100 d-flex align-items-center justify-content-center" style="margin-top:30px">
         
-                  <button type="button" class="btn btn-dark"  onclick="botonAccion()" style="width: 100px;">
+                  <button type="button" class="btn btn-light botonCustom"  onclick="botonAccion()" style="width: 100px;">
           
                     Acción
                     
                   
                   </button>
-
-
-
-
-                  
-                
               </div>
 
               <div class="input-group" style="margin-top: 30px;">
-                <label for="colFormLabelLg" class="col-sm-2  fuenteFormulario">Salida:</label>
-              <label for="colFormLabelLg" class="col-sm-2  fuenteFormulario" id="salidaDatos" style="margin-left:10px;"></label>
+                
+              <label for="colFormLabelLg " class="col-sm-2  fuenteFormulario">Salida:</label>
+              <ul class="ulSalida">
+
+              </ul>
+             <label for="colFormLabelLg " class="col-sm-2  fuenteFormulario" id="salidaDatos" style="margin-left:10px;"></label>
+                
+
               
             </div>
          

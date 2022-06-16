@@ -1,10 +1,5 @@
 let datos =[]
-
-
-
-
-
-
+let listaDeNumeros2 = document.querySelector(".ulSalida");
 
 function agregar(){
     
@@ -18,10 +13,22 @@ function agregar(){
     }else{
 
         datos.push(numero);
+        let listaDeNumeros = document.querySelector("ul");
+        const li = document.createElement('li');
+        li.textContent = numero;
+        listaDeNumeros.appendChild(li);
 
-    alert('Número agregado correctamente')
-    document.getElementById('numero').value ="";
-    document.getElementById("numerosAgregados").placeholder = "Click aquí para ver números agregados";
+        /*
+        datos.forEach(item =>{
+        const li = document.createElement('li');
+        li.textContent = item;
+        listaDeNumeros.appendChild(li);     
+
+            });
+        */
+        alert('Número agregado correctamente');
+        document.getElementById('numero').value = "";    
+
     }
     
     
@@ -34,41 +41,46 @@ function agregar(){
 
 function imprimirInput(){
 
-    let resultado = "|";
+    let listaDeNumeros = document.querySelector("ul");
     
-    if(datos.length === 0){
-
-        document.getElementById("numerosAgregados").placeholder = "No hay nada para mostrar";
-
-    }else{
-
-        for(const dato of datos){
-        
-            resultado += dato + '|';
-        }
-    
-        document.getElementById("numerosAgregados").value = resultado;
-
-    }
-    
-
+    datos.forEach(item =>{
+        const li = document.createElement('li');
+        li.textContent = item;
+        listaDeNumeros.appendChild(li);
+    });
    
 
 }
 
 function imprimirLabel(){
 
-    document.getElementById('salidaDatos').innerHTML = "";
 
-    let resultado = "|"
+
+     
+    //document.getElementById('salidaDatos').innerHTML = "";
+
+    //let resultado = "|"
     
+        
 
+        listaDeNumeros2.innerHTML ="";
+        
+        
+/*
     for(i = 0 ; i < datos.length; i++){
 
         resultado += datos[i] + '|';
     }
 
-    document.getElementById('salidaDatos').innerHTML = resultado;
+    
+*/
+    datos.forEach(item =>{
+    const li = document.createElement('li');
+    li.textContent = item;
+    listaDeNumeros2.appendChild(li);
+    });
+
+    //document.getElementById('salidaDatos').innerHTML = resultado;
 
 }
 
@@ -76,7 +88,8 @@ function imprimirLabel(){
 
 
 function ordenarMayorMenor(){
-
+    document.getElementById('salidaDatos').innerHTML = "";
+    listaDeNumeros2.innerHTML = "";
     datos.sort(function(a, b){return b - a})
     
     /*
@@ -101,7 +114,8 @@ function ordenarMayorMenor(){
 }
 
 function ordenarMenorMayor(){
-
+    listaDeNumeros2.innerHTML = "";
+    document.getElementById('salidaDatos').innerHTML = "";
     let aux;
     datos.sort(function(a, b){return a - b})
 
@@ -127,8 +141,10 @@ function ordenarMenorMayor(){
 }
 
 function sumarNumeros(){
+    
 
     document.getElementById('salidaDatos').innerHTML = "";
+    listaDeNumeros2.innerHTML ="";
 
    let sumaNumeros = 0;
 
@@ -147,6 +163,7 @@ function sumarNumeros(){
 }
 
 function multiplicacionPorNum(){
+    listaDeNumeros2.innerHTML ="";
 
     document.getElementById('salidaDatos').innerHTML = "";
 
@@ -159,14 +176,11 @@ function multiplicacionPorNum(){
 
     }
 
-    for(i = 0; i < datos.length; i++){
-
-        document.getElementById('salidaDatos').innerHTML += multiplacionArray[i] + ',';
-
-    }
-
-
-
+    multiplacionArray.forEach(item =>{
+        const li = document.createElement('li');
+        li.textContent = item;
+        listaDeNumeros2.appendChild(li);
+        });
 }
 
 
@@ -176,7 +190,7 @@ function multiplicacionPorNum(){
 
 
 function botonAccion(){
-
+    if(datos.length !== 0){
     let numeroOp = document.querySelector('#selectorOp')
     let codigoAccion = numeroOp.options[numeroOp.selectedIndex].getAttribute('value')
 
@@ -194,6 +208,13 @@ function botonAccion(){
         multiplicacionPorNum();
 
 
+    }else{
+
+        alert("Debe de ingresar una opcion!")
     }
+}else{
+
+    alert("Debe de ingresar un número");
+}
 
 }
